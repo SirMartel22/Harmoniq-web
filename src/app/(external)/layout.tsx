@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HarmoniQ",
-  description: "A balance and profuctivity platform",
+  title: "Harmoniq",
+  description: "A balance and productivity platform",
 };
 
 export default function RootLayout({
