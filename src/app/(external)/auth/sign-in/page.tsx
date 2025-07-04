@@ -1,5 +1,6 @@
  
-import Link from "next/link";
+// "use client"
+// import Link from "next/link";
 
 export default function SignIn() {
     return (
@@ -11,7 +12,7 @@ export default function SignIn() {
             <section className="w-4/5 max-w-5xl">
                 <div>
                     <h1>SignIn</h1>
-                    <p>Already Have an account? <Link href="#">Login</Link></p>
+                    <p>Already Have an account? </p>
                 </div>
             </section>
         </main>
