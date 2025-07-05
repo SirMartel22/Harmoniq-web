@@ -1,12 +1,11 @@
+"use client"
+
 import React from 'react'
 
-const SigninForm = () => {
+export default function SigninForm () {
   return (
-      <div>
-          Hello
-      
-    </div>
+      <div> Hello  </div>
   )
 }
 
-export default SigninForm
+// export default SigninForm
