@@ -10,7 +10,7 @@ export default function SignIn() {
         // <h1 className="text-2xl font-bold">SignIn</h1>
         // </div>
 
-        <main className="flex min-h-screen flex-col items-center justify-center">
+        <div className="flex min-h-screen flex-col items-center justify-center">
             <section className="w-4/5 max-w-5xl">
                 <div className="mb-8 flex flex-col gap-2">
                     <h1 className="text-3xl font-semibold">Welcome to Sign-In Page</h1>
@@ -19,6 +19,6 @@ export default function SignIn() {
 
                 <SigninForm />
             </section>
-        </main>
+        </div>
     )
 }
