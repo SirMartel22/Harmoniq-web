@@ -32,7 +32,7 @@ const SigninForm = () => {
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         {/* field */}
-        <SignupFormField
+        <SigninFormField
           name="email"
           label="Email"
           placeholder="Email"
@@ -41,7 +41,7 @@ const SigninForm = () => {
           description=""
         />
 
-         <SignupFormField
+        <SigninFormField
           name="username"
           label="Username"
           placeholder="Username"
@@ -49,7 +49,7 @@ const SigninForm = () => {
           formControl={form.control}
         />
 
-         <SignupFormField
+        <SigninFormField
           name="password"
           label="Password"
           placeholder="Password"
@@ -57,13 +57,13 @@ const SigninForm = () => {
           description="At least 8 characters."
           formControl={form.control}
         />
-        <Button type="submit">Sign up</Button>
+        <Button type="submit">Sign In</Button>
       </form>  
     </Form>
   )
 }
 
-interface SignupFormFieldProps {
+interface SigninFormFieldProps {
   name: FieldPath<z.infer<typeof formSchema>>;
   label: string;
   placeholder: string;
@@ -72,7 +72,7 @@ interface SignupFormFieldProps {
   formControl: Control<z.infer <typeof formSchema>, undefined>
 }
 
-const SignupFormField: React.FC<SignupFormFieldProps> = ({
+const SigninFormField: React.FC<SigninFormFieldProps> = ({
   name, label, placeholder, description, inputType, formControl
 }) => {
 
