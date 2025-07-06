@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "A balance and productivity platform",
 };
 
-export default async function RootLayout({
+export default async function InternalLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
