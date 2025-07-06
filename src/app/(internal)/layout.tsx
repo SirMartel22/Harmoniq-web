@@ -32,10 +32,6 @@ export default async function InternalLayout({
   const defaultOpen = cookieStore.get("sidebar_state")?.value === "true"
 
     return (
-        <html lang="en">
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
                 <SidebarProvider defaultOpen={defaultOpen} >
                     <AppSidebar />
                     <main>
@@ -43,7 +39,5 @@ export default async function InternalLayout({
                         {children}
                     </main>
                 </SidebarProvider>
-            </body>
-        </html>
     );
 }
