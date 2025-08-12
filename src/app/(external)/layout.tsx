@@ -18,19 +18,16 @@ export const metadata: Metadata = {
   description: "A balance and profuctivity platform",
 };
 
-export default function RootLayout({
+export default function ExternalLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <>
         <Navbar />
         {children}
-      </body>
-    </html>
+    </>
+
   );
 }

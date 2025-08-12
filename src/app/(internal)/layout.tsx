@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "A balance and productivity platform",
 };
 
-export default async function RootLayout({
+export default async function InternalLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
@@ -32,10 +32,6 @@ export default async function RootLayout({
   const defaultOpen = cookieStore.get("sidebar_state")?.value === "true"
 
     return (
-        <html lang="en">
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
                 <SidebarProvider defaultOpen={defaultOpen} >
                     <AppSidebar />
                     <main>
@@ -43,7 +39,5 @@ export default async function RootLayout({
                         {children}
                     </main>
                 </SidebarProvider>
-            </body>
-        </html>
     );
 }
